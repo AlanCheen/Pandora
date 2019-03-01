@@ -15,7 +15,8 @@ public final class ClipboardUtils {
     }
 
     public static boolean copy(@NonNull Context context, @NonNull CharSequence label, @NonNull CharSequence text) {
-        if (context == null || TextUtils.isEmpty(text)) {
+        Predictions.notNull(context);
+        if (TextUtils.isEmpty(text)) {
             return false;
         }
         ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);

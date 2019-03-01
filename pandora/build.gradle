@@ -32,3 +32,18 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+
+apply plugin: "guru.stefma.bintrayrelease"
+
+version = "0.0.1"
+group = "me.yifeiyuan.pandora"
+androidArtifact {
+    artifactId = "pandora"
+}
+publish {
+    userOrg = 'alancheen'
+    dryRun = false
+    desc = 'Pandora'
+    website = 'https://github.com/AlanCheen/Pandora'
+}
