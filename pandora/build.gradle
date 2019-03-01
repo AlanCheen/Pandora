@@ -36,7 +36,7 @@ dependencies {
 
 apply plugin: "guru.stefma.bintrayrelease"
 
-version = "0.0.1"
+version = "0.0.2"
 group = "me.yifeiyuan.pandora"
 androidArtifact {
     artifactId = "pandora"

@@ -6,8 +6,7 @@ package me.yifeiyuan.pandora;
 public final class StringUtils {
 
     private StringUtils() {
-
+        throw new AssertionError("No instances.");
     }
-
 
 }

@@ -10,7 +10,7 @@ import android.support.annotation.NonNull;
 public final class MainThread {
 
     private MainThread() {
-
+        throw new AssertionError("No instances.");
     }
 
     private static final Handler HANDLER = new Handler(Looper.getMainLooper());

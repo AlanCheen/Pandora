@@ -12,6 +12,7 @@ import android.text.TextUtils;
 public final class ClipboardUtils {
 
     private ClipboardUtils() {
+        throw new AssertionError("No instances.");
     }
 
     public static boolean copy(@NonNull Context context, @NonNull CharSequence label, @NonNull CharSequence text) {

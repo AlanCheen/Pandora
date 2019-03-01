@@ -17,6 +17,7 @@ import me.yifeiyuan.pandora.Predictions;
 public final class ApplicationUtils {
 
     private ApplicationUtils() {
+        throw new AssertionError("No instances.");
     }
 
     private static Application sApplication;
