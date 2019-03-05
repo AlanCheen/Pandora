@@ -16,7 +16,7 @@ public final class MainThread {
     private static final Handler HANDLER = new Handler(Looper.getMainLooper());
 
     public static void post(@NonNull Runnable runnable) {
-        if (isMainThread()) {
+        if (isOnMainThread()) {
             runnable.run();
         } else {
             HANDLER.post(runnable);
@@ -27,7 +27,7 @@ public final class MainThread {
         HANDLER.postDelayed(runnable, delayMillis);
     }
 
-    public static boolean isMainThread() {
+    public static boolean isOnMainThread() {
         return Looper.getMainLooper() == Looper.myLooper();
     }
 

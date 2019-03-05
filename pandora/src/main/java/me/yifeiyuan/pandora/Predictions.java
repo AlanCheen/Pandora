@@ -1,5 +1,9 @@
 package me.yifeiyuan.pandora;
 
+import android.text.TextUtils;
+
+import me.yifeiyuan.pandora.thread.MainThread;
+
 /**
  * Created by 程序亦非猿 on 2019/3/1.
  */
@@ -10,12 +14,40 @@ public final class Predictions {
     }
 
     public static void notNull(Object o) {
-        notNull(o, "Can't be null");
+        notNull(o, "Can't be null!");
     }
 
     public static void notNull(Object o, String msg) {
         if (o == null) {
             throw new NullPointerException(msg);
+        }
+    }
+
+    public static void notEmpty(CharSequence charSequence) {
+        if (TextUtils.isEmpty(charSequence)) {
+            throw new IllegalArgumentException("Can't be empty!");
+        }
+    }
+
+    public static void notEmpty(CharSequence charSequence, String msg) {
+        notEmpty(charSequence, msg);
+    }
+
+    /**
+     * Throws an {@link IllegalArgumentException} if called on a thread other than the main thread.
+     */
+    public static void onMainThread() {
+        if (!MainThread.isOnMainThread()) {
+            throw new IllegalArgumentException("You must call this method on the main thread");
+        }
+    }
+
+    /**
+     * Throws an {@link IllegalArgumentException} if called on the main thread.
+     */
+    public static void onBackgroundThread() {
+        if (!MainThread.isOnMainThread()) {
+            throw new IllegalArgumentException("You must call this method on a background thread");
         }
     }
 }

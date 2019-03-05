@@ -9,4 +9,16 @@ public final class StringUtils {
         throw new AssertionError("No instances.");
     }
 
+    public static int toInt(String str) {
+        return toInt(str, 0);
+    }
+
+    public static int toInt(String value, int defaultValue) {
+        try {
+            return Integer.parseInt(value);
+        } catch (Exception e) {
+            e.getStackTrace();
+        }
+        return defaultValue;
+    }
 }
