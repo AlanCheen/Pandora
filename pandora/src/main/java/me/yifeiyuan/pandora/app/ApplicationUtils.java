@@ -2,7 +2,6 @@ package me.yifeiyuan.pandora.app;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
-import android.content.pm.ApplicationInfo;
 import android.support.annotation.NonNull;
 
 import java.lang.reflect.Field;
@@ -40,23 +39,13 @@ public final class ApplicationUtils {
         return sApplication;
     }
 
+    /**
+     * 设置全局 Application
+     *
+     * @param application
+     */
     public static void setupApplication(@NonNull Application application) {
         Predictions.notNull(application);
         sApplication = application;
     }
-
-    public static boolean isAppDebugable() {
-        if (sApplication == null) {
-            return false;
-        }
-
-        try {
-            ApplicationInfo info = sApplication.getApplicationInfo();
-            return (info.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-
 }

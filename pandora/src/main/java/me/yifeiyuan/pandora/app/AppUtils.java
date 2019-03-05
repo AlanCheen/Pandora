@@ -1,6 +1,7 @@
 package me.yifeiyuan.pandora.app;
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
@@ -14,13 +15,12 @@ public final class AppUtils {
     }
 
     /**
-     * 获取app的版本名
-     *
-     * @param context 上下文
+     * 获取 App 的版本名
      *
      * @return app的版本名 默认为""
      */
-    public static String getVersionName(Context context) {
+    public static String getVersionName() {
+        Context context = ApplicationUtils.getApplication();
         PackageManager pm = context.getPackageManager();
         try {
             PackageInfo packageInfo = pm.getPackageInfo(context.getPackageName(), 0);
@@ -32,13 +32,12 @@ public final class AppUtils {
     }
 
     /**
-     * 获取app的版本号
-     *
-     * @param context 上下文
+     * 获取 App 的版本号
      *
      * @return 获取版本号 默认为0
      */
-    public static int getVersionCode(Context context) {
+    public static int getVersionCode() {
+        Context context = ApplicationUtils.getApplication();
         PackageManager pm = context.getPackageManager();
         try {
             PackageInfo packageInfo = pm.getPackageInfo(context.getPackageName(), 0);
@@ -49,4 +48,16 @@ public final class AppUtils {
         return 0;
     }
 
+    /**
+     * @return App是否可以 debug
+     */
+    public static boolean isAppDebugable() {
+        try {
+            ApplicationInfo info = ApplicationUtils.getApplication().getApplicationInfo();
+            return (info.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 }
