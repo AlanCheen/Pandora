@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 17
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -36,7 +36,7 @@ dependencies {
 
 apply plugin: "guru.stefma.bintrayrelease"
 
-version = "0.0.5"
+version = "1.0.0-basic"
 group = "me.yifeiyuan.pandora"
 androidArtifact {
     artifactId = "pandora"
