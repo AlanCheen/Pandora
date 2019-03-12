@@ -35,6 +35,10 @@ public final class ApplicationUtils {
         }
     }
 
+    /**
+     * 获取全局 Application
+     * @return
+     */
     public static Application getApplication() {
         return sApplication;
     }

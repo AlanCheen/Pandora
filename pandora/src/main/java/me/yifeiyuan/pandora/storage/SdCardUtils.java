@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora;
+package me.yifeiyuan.pandora.storage;
 
 import android.os.Environment;
 

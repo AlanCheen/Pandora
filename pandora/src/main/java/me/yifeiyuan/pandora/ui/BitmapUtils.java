@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora;
+package me.yifeiyuan.pandora.ui;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

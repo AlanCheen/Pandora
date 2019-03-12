@@ -1,10 +1,12 @@
-package me.yifeiyuan.pandora;
+package me.yifeiyuan.pandora.device;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import me.yifeiyuan.pandora.Predictions;
 
 /**
  * Created by 程序亦非猿 on 2019/1/9.
