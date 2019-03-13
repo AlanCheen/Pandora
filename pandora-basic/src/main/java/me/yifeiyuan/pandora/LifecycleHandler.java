@@ -7,6 +7,8 @@ import android.arch.lifecycle.OnLifecycleEvent;
 import android.os.Handler;
 import android.os.Looper;
 
+import static me.yifeiyuan.pandora.Predictions.notNull;
+
 /**
  * Created by 程序亦非猿 on 2019/3/11.
  */
@@ -38,6 +40,7 @@ public class LifecycleHandler extends Handler implements LifecycleObserver {
     }
 
     private void addObserver() {
+        notNull(lifecycleOwner);
         lifecycleOwner.getLifecycle().addObserver(this);
     }
 
