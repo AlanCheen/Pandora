@@ -1,32 +1,49 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
+
+
+
     defaultConfig {
-        applicationId "me.yifeiyuan.pandoradev"
-        minSdkVersion 17
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation project(':pandora-full')
+    api project(':pandora-basic')
+}
 
-//    implementation 'me.yifeiyuan.pandora:pandora-basic:1.0.0'
 
+apply plugin: "guru.stefma.bintrayrelease"
+
+version = "1.0.0"
+group = "me.yifeiyuan.pandora"
+androidArtifact {
+    artifactId = "pandora-full"
+}
+publish {
+    userOrg = 'alancheen'
+    dryRun = false
+    desc = 'Pandora full features'
+    website = 'https://github.com/AlanCheen/Pandora'
 }

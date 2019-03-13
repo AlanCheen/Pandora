@@ -37,7 +37,6 @@ public final class ApplicationUtils {
 
     /**
      * 获取全局 Application
-     * @return
      */
     public static Application getApplication() {
         return sApplication;
@@ -45,8 +44,6 @@ public final class ApplicationUtils {
 
     /**
      * 设置全局 Application
-     *
-     * @param application
      */
     public static void setupApplication(@NonNull Application application) {
         Predictions.notNull(application);

@@ -1,5 +1,6 @@
 # Pandora
 
+> warning : 我正在重构工程 :-D
 
 Pandora 是一个 Android 工具类的集合，包含两个版本：
 

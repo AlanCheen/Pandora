@@ -49,7 +49,7 @@ public final class AppUtils {
     }
 
     /**
-     * @return App是否可以 debug
+     * @return App 是否可以 debug
      */
     public static boolean isAppDebugable() {
         try {
