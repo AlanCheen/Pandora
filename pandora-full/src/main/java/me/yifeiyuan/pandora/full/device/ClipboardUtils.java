@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.device;
+package me.yifeiyuan.pandora.full.device;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

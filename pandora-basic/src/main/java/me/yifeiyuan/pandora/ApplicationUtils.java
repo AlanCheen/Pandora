@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.app;
+package me.yifeiyuan.pandora;
 
 import android.annotation.SuppressLint;
 import android.app.Application;

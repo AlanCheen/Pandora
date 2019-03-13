@@ -3,8 +3,6 @@ package me.yifeiyuan.pandora;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
-import me.yifeiyuan.pandora.thread.MainThread;
-
 /**
  * Created by 程序亦非猿 on 2019/3/1.
  */

@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.collection;
+package me.yifeiyuan.pandora.full.collection;
 
 import android.support.annotation.Nullable;
 

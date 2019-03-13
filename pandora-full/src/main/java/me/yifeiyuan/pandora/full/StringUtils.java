@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora;
+package me.yifeiyuan.pandora.full;
 
 /**
  * Created by 程序亦非猿 on 2019/1/9.

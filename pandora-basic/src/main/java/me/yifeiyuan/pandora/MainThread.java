@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.thread;
+package me.yifeiyuan.pandora;
 
 import android.os.Handler;
 import android.os.Looper;

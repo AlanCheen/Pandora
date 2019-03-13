@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.ui;
+package me.yifeiyuan.pandora.full.ui;
 
 import android.graphics.DashPathEffect;
 import android.graphics.Path;

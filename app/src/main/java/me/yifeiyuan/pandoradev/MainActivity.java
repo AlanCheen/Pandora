@@ -2,8 +2,10 @@ package me.yifeiyuan.pandoradev;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import me.yifeiyuan.pandora.LifecycleHandler;
+import me.yifeiyuan.pandora.ToastUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,5 +15,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new LifecycleHandler(this).sendEmptyMessage(1);
+    }
+
+    public void onTestToastUtils(View view) {
+
+        long time = System.currentTimeMillis();
+        ToastUtils.debug("Time:" + time);
     }
 }

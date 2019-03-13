@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.ui;
+package me.yifeiyuan.pandora.full.ui;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,7 +17,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import me.yifeiyuan.pandora.io.IoUtils;
+import me.yifeiyuan.pandora.full.io.IoUtils;
 
 /**
  * Created by 程序亦非猿 on 2019/3/5.

@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.app;
+package me.yifeiyuan.pandora;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;

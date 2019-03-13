@@ -35,7 +35,7 @@ Pandora 与其他工具类库的不同：
 只依赖 baisc 能力:
 
 ```groovy
-implementation 'me.yifeiyuan.pandora:pandora-basic:1.0.0'
+implementation 'me.yifeiyuan.pandora:pandora-basic:1.0.3'
 ```
 
 
@@ -43,7 +43,7 @@ implementation 'me.yifeiyuan.pandora:pandora-basic:1.0.0'
 依赖 full 能力：
 
 ```groovy
-implementation 'me.yifeiyuan.pandora:pandora-full:1.0.1'
+implementation 'me.yifeiyuan.pandora:pandora-full:1.0.3'
 ```
 
 注意：full 版本包含 basic 版本的能力，所以不再需要添加 basic 的依赖。
@@ -93,6 +93,8 @@ Android 开发不可避免的要跟像素 dp 等打交道，UiUtils 包含一些
 
 ### 贡献
 
-欢迎提供更多更好用的 Utils ，请添加到 pandora-full 模块，并提 PR，感谢支持。
+欢迎提供更多更好用的 Utils ，请添加到 pandora-full 模块，并提 PR，感谢支持！
+
+如果有 Bug ，非常欢迎提 issue 反馈！
 
 可以 star 支持一下哟！~

@@ -1,4 +1,4 @@
-package me.yifeiyuan.pandora.ui;
+package me.yifeiyuan.pandora;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -11,8 +11,6 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.WindowManager;
-
-import me.yifeiyuan.pandora.app.ApplicationUtils;
 
 /**
  * Created by 程序亦非猿 on 2019/1/9.

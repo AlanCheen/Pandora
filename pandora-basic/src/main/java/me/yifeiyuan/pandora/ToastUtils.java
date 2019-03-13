@@ -1,10 +1,6 @@
-package me.yifeiyuan.pandora.ui;
+package me.yifeiyuan.pandora;
 
 import android.widget.Toast;
-
-import me.yifeiyuan.pandora.app.AppUtils;
-import me.yifeiyuan.pandora.app.ApplicationUtils;
-import me.yifeiyuan.pandora.thread.MainThread;
 
 /**
  * Created by 程序亦非猿 on 2019/3/6.
@@ -30,7 +26,6 @@ public final class ToastUtils {
             @Override
             public void run() {
                 try {
-                    sToast.cancel();
                     sToast.setText(msg);
                     sToast.show();
                 } catch (Exception e) {
