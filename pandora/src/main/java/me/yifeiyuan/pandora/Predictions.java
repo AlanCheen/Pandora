@@ -1,5 +1,6 @@
 package me.yifeiyuan.pandora;
 
+import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
 import me.yifeiyuan.pandora.thread.MainThread;
@@ -17,7 +18,7 @@ public final class Predictions {
         notNull(o, "Can't be null!");
     }
 
-    public static void notNull(Object o, String msg) {
+    public static void notNull(Object o, @NonNull String msg) {
         if (o == null) {
             throw new NullPointerException(msg);
         }
@@ -27,7 +28,7 @@ public final class Predictions {
         notEmpty(charSequence, "Can't be empty!");
     }
 
-    public static void notEmpty(CharSequence charSequence, String msg) {
+    public static void notEmpty(CharSequence charSequence, @NonNull String msg) {
         if (TextUtils.isEmpty(charSequence)) {
             throw new IllegalArgumentException(msg);
         }
