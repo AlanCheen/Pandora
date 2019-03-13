@@ -1,15 +1,30 @@
 # Pandora
 
-> warning : 我正在重构工程 :-D
+> Updating
 
-Pandora 是一个 Android 工具类的集合，包含两个版本：
 
-1. basic 版本，只会包含非常非常基础的 Utils ,比如全局提供 Application 能力的类；
-2. full 版本，会包含各种 Utils ，涉及到 Android 开发的方方面面；
 
-当只需要非常基础的能力时可以依赖 basic 版本： `1.0.3-basic` (带有 -basic 后缀), 代码在 `basic` 分支，推荐！；
+> 在古希腊的神话中 Pandora 是世界上第一个女人，一个 all-gifted 的女人（具有一切天赋的女人），而潘多拉的魔盒里装着希望。
+
+
+
+借着 `all-gifted` 的寓意，我创建了这个开源库: `Pandora`，她是一个精选的 Utils 集合。
+
+
+
+**虽然说算是 Utils 的集合，但是跟其他的库并不同，这里的类&方法的数量非常少，我只选了极少数我觉得真的非常有用且有大概率复用的类，在保证避免编写大量样板代码的基础之上，减少引入不必要类的可能，防止包体积增大。**
+
+
+
+目前 Pandora 由两个模块组成 ：
+
+1. `pandora-basic` ，只包含非常非常基础的工具类 ，绝大多数 App 都需要的工具类，在保证避免编写大量样板代码的基础之上，减少引入不必要类的可能，防止包体积增大；
+2. `pandora-full` ，依赖并包含 basic ，会包含各种 Utils ，可能涉及到 Android 开发的方方面面。
+
+当只需要非常基础的能力时可以依赖 basic 版本推荐！；
 
 当需要依赖大量 Pandora 包含的 Utils 时，才需要依赖 full 版本：`0.0.6` ，代码在 `master` 分支，不推荐！；
+
 
 
 **推荐只依赖 basic 版本，避免引入过多不需要的类，增加包体积。**
@@ -20,23 +35,35 @@ Pandora 是一个 Android 工具类的集合，包含两个版本：
 
 
 
+只依赖 baisc 能力:
+
 ```groovy
-implementation 'me.yifeiyuan.pandora:pandora:version'
+implementation 'me.yifeiyuan.pandora:pandora-basic:1.0.0'
 ```
 
 
 
-### Basic 版本能力
+依赖 full 能力：
+
+```groovy
+implementation 'me.yifeiyuan.pandora:pandora-full:1.0.1'
+```
+
+(full 版本包含 basic 版本的能力，所以不再需要添加 basic 的依赖)
 
 
 
-Basic 只包含一些非常常见且实用，绝大多数 APP 都需要的工具类，在保证避免编写大量样板代码的基础之上，减少引入不必要类的可能，防止包体积增大。
+### Basic 版本的能力介绍
 
 
 
 努力做到真正需要才加入到 basic 版本。
 
+
+
 > 注意: 方法可能有变，请以实际代码为准。
+
+
 
 #### ApplicationUtils
 
