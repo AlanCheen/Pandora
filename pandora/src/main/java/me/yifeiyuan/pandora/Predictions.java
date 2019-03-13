@@ -24,13 +24,13 @@ public final class Predictions {
     }
 
     public static void notEmpty(CharSequence charSequence) {
-        if (TextUtils.isEmpty(charSequence)) {
-            throw new IllegalArgumentException("Can't be empty!");
-        }
+        notEmpty(charSequence, "Can't be empty!");
     }
 
     public static void notEmpty(CharSequence charSequence, String msg) {
-        notEmpty(charSequence, msg);
+        if (TextUtils.isEmpty(charSequence)) {
+            throw new IllegalArgumentException(msg);
+        }
     }
 
     /**
