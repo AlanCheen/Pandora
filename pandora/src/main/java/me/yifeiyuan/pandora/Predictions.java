@@ -46,7 +46,7 @@ public final class Predictions {
      * Throws an {@link IllegalArgumentException} if called on the main thread.
      */
     public static void onBackgroundThread() {
-        if (!MainThread.isMainThread()) {
+        if (MainThread.isMainThread()) {
             throw new IllegalArgumentException("You must call this method on a background thread");
         }
     }
