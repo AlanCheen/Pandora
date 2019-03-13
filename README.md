@@ -113,4 +113,3 @@ Android 开发不可避免的要跟像素 dp 等打交道，UiUtils 包含一些
 
 ![](./assets/predictions.png)
 
-（最后一个方法多了个! 在代码中已删除，请放心使用！）
