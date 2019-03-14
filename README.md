@@ -69,19 +69,19 @@ implementation 'me.yifeiyuan.pandora:pandora-full:1.0.3'
 
 一个全局单例 Toast ，**解决多次实例化 Toast 导致不停弹 Toast 的问题**。
 
-![toastutils](./assets/toastutils.png)
+![](./assets/toastutils.png)
 
 #### LifecycleHandler
 
 在使用 Handler 的时候我们总是担心 Handler 会导致内存泄露，于是我们每次都会在 onDestroy 方法里移除 Handler 的消息，编写样板代码，LifecycleHandler 的出现就是为了解决这个困境，**使用它，你不再需要关注 onDestroy 啦！**
 
-![lifecyclehandler](./assets/lifecyclehandler.png)
+![](./assets/lifecyclehandler.png)
 
 #### UiUtils
 
 Android 开发不可避免的要跟像素 dp 等打交道，UiUtils 包含一些数据单位转换的操作。
 
-![uiutils](./assets/uiutils.png)
+![](./assets/uiutils.png)
 
 #### Predictions
 
@@ -89,7 +89,7 @@ Android 开发不可避免的要跟像素 dp 等打交道，UiUtils 包含一些
 
 虽然我们有 NonNull 等注解 ，但是依然避免不了外部传递非法参数，这个时候我们避免不了写样板代码，检测参数是否非法，如果是则抛出异常，**Predictions 可以让你少写一些检查抛、异常的样板代码**。
 
-![predictions](./assets/predictions.png)
+![](./assets/predictions.png)
 
 ### 贡献
 
