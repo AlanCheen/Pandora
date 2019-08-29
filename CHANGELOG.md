@@ -18,7 +18,7 @@ Init project.
 
 ## Full ChangeLog
 
-### 1.0.4
+### 1.0.4 TODO
 
 - Add `ViewUtils` class with `expandClickArea` method
 
